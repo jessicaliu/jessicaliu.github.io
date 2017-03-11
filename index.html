@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jessica Liu</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<style>
+html {
+	font-family: 'Roboto Mono', monospace;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #ff5c5c;
+	text-decoration: none;
+}
+h1 {
+	font-size: 14px;
+}
+p {
+	font-size: 12px;
+}
+.outer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-right: 100px;
+	min-height: 300px;
+}
+.bg {
+	max-height: 100vh;
+	max-width: 80vw;
+	min-height: 300px;
+}
+.inner {
+	position: absolute;
+  bottom: 70%;
+  left: 60%;
+  width: 200px;
+  transition: all .2s ease;
+}
+@media (max-height: 500px) {
+	.outer {
+		min-width: 300px;
+		bottom: auto;
+	}
+	.inner {
+	  bottom: 50%;
+	  left: 70%;		
+	}
+}
+@media (max-width: 530px) {
+	.inner {
+		left: 50%;
+	}
+}
+@media (max-width: 419px) {
+	.outer {
+		position: relative;
+		padding-top: 100px;
+    min-height: 539px;
+    box-sizing: border-box;
+	}
+	.bg {
+		max-height: initial;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	}
+	.inner {
+    top: 40px;	
+    left: calc(50vw - 100px);
+	}
+}
+
+</style>
+</head>
+
+<body>
+<div class='outer'>
+	<img src='bg.png' class='bg' />
+	<div class='inner'>
+		<h1>Jessica Liu</h1>
+		<p>Software Engineer at <a href='https://www.figma.com' target='_blank'>Figma</a></p>
+		<p>also likes to <a href='https://jeliumon.tumblr.com' target='_blank'>draw</a></p>
+	</div>
+</div>
+</body>
+
+</html>
